@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body{
+            background-image:url("image.1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%
+        }
+    </style>
+
+</head>
+
+    <body>
+    
+        <div class="menu_wrap">
+          <div class="intro_bg">
+            <div class="header">
+              <div class="searchArea">
+                <form>
+                  <input type="search" name="" value="" placeholder="검색창입니다">
+                  <span>검색</span>
+                </form>
+              </div>
+              <ul class="M1">
+
+                <li>
+                    <a href="http://127.0.0.1:5500/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8.html" target=_self>Home</a>
+                </li>
+                <li>
+                    <a href="에피타이저.html" target=_self>에피타이저</a>
+                </li>
+                <li>
+                    <a>메인 요리</a>
+
+                    <ul class="M2">
+                        <li><a href="한식.html" target=_self style="color:white;">한식</a></li>
+                        <li><a href="중식.html" target=_self style="color:white;">중식</a></li>
+                        <li><a href="양식.html" targeet=_self style="color:white;">양식</a></li>
+                        <li><a href="기타.html" target=_self style="color:white;">기타</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="디저트 이미지.jpg" target=_self>디저트</a>
+                </li>
+                <li>
+                    <a href="음료.html" target=_self>음료</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="intro_text">
+              <h1>요리 레시피</h1>
+  
+            </div>
+          </div>
+        </div>
+    
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+  </html>
